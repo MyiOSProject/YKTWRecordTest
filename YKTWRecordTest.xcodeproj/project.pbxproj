@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D49D2F541DB9FC1C0028C744 /* lame.h in Frameworks */ = {isa = PBXBuildFile; fileRef = D49D2F501DB9F7370028C744 /* lame.h */; };
+		D49D2F551DB9FC1C0028C744 /* libmp3lame.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D49D2F511DB9F7370028C744 /* libmp3lame.a */; };
 		D4B287551DB8BEBA003FBD13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B287541DB8BEBA003FBD13 /* main.m */; };
 		D4B287581DB8BEBA003FBD13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B287571DB8BEBA003FBD13 /* AppDelegate.m */; };
 		D4B2875B1DB8BEBA003FBD13 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4B2875A1DB8BEBA003FBD13 /* ViewController.m */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D49D2F501DB9F7370028C744 /* lame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = lame.h; sourceTree = "<group>"; };
+		D49D2F511DB9F7370028C744 /* libmp3lame.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libmp3lame.a; sourceTree = "<group>"; };
 		D4B287501DB8BEBA003FBD13 /* YKTWRecordTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YKTWRecordTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4B287541DB8BEBA003FBD13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D4B287561DB8BEBA003FBD13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D49D2F541DB9FC1C0028C744 /* lame.h in Frameworks */,
+				D49D2F551DB9FC1C0028C744 /* libmp3lame.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D49D2F4C1DB9F4B50028C744 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D4B287471DB8BEBA003FBD13 = {
 			isa = PBXGroup;
 			children = (
+				D49D2F501DB9F7370028C744 /* lame.h */,
+				D49D2F511DB9F7370028C744 /* libmp3lame.a */,
 				D4B287521DB8BEBA003FBD13 /* YKTWRecordTest */,
 				D4B287511DB8BEBA003FBD13 /* Products */,
+				D49D2F4C1DB9F4B50028C744 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +126,7 @@
 				TargetAttributes = {
 					D4B2874F1DB8BEBA003FBD13 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = CE33GPRE9F;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -270,10 +287,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CE33GPRE9F;
 				INFOPLIST_FILE = YKTWRecordTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.YKTWRecordTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -281,10 +305,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CE33GPRE9F;
 				INFOPLIST_FILE = YKTWRecordTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = test.YKTWRecordTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -307,6 +338,7 @@
 				D4B287691DB8BEBA003FBD13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
